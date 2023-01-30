@@ -7,10 +7,11 @@ use App\Models\User;
 
 class LoginController extends Controller
 {
-    public function(Request $request){
+    public function login(Request $request)
+    {
 
         $request->validate([
-            'email'     => ['required','email'],
+            'email'     => ['required', 'email'],
             'password'  => ['required']
         ]);
     }
